@@ -1,0 +1,13 @@
+name: Free SSHX Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-sshx:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSHX Kur ve Baslat
+        run: |
+          echo "SSHX indiriliyor..."
+          curl -sSf https://sshx.io/get | sh -s run
